@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 형식</title>
+</head>
+<body>
+    
+    <script>
+        //함수 => 형식 3가지 사용법, 사용법 규칙
+        //메게 변수 , return문 
+        // <on이벤트 = 함수(인수)>
+        // 이름 있는 함수
+    console.log(num(10));    
+        function num(a){
+                let result = 3 * a;
+                // console.log("num:", result);
+                return result;
+
+            }
+           console.log(num(20));
+            // num(10);
+            // num(20);
+        
+            // 이름 없는 함수
+            //{속성명 : function(){}}
+        const room = function(b){
+            let result = 5 / b;
+            console.log(result);
+        }
+        room(2);
+        
+        // 함수식
+        (function(a){
+            let result = 45 * a;
+            console.log("함수식1",result);
+        })(5);
+
+        //함수식
+        (function(){
+            let result1= 45 * 3;
+            console.log("함수식2",result1);
+        }());
+
+        //함수식
+        
+        const sub = (function(){
+            let result = 3 * 5;
+            return result;
+        })();
+
+        console.log(sub);
+
+    </script>
+</body>
+</html>

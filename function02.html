@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표 함수</title>
+</head>
+<body>
+    <script>
+        const main = function(){
+            console.log("main");
+        }
+        //
+        main();
+        //
+        const main1 = () => {
+            console.log("main1");
+        }
+        main1();
+        //
+        const main2 = a => {
+            console.log(a);
+        }
+        main2("welcome");
+        //
+        const main3 = (a,b) => {
+            console.log(a + b);
+        }
+        main3(5,7);
+        //
+        const main4 = (a,b) => console.log(a * b);
+        main4(4,10);
+        //
+        const main5 = a => {return a * 2};
+        console.log(main5(4));
+        //
+        const main6 = a => a * 3;
+        console.log(main6(4));
+
+
+    
+    </script>
+</body>
+</html>
