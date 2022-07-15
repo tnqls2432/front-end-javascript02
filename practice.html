@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // console.log(nm(30));
+    // function nm(b){
+    //     let result = 3 * b;
+    //     return result;
+    // }
+    // console.log(30);
+    
+    // let room = function(a){
+    //     let result = 4 / a;
+    //     console.log(result);
+    // }
+    // room(3)
+
+    // (function(a){
+    //     let result = 45 * a;
+    //     console.log("함수식 1",result);
+    // })(4);
+
+    (function(){
+        let result1 = 45 * 4;
+        console.log("함수식2", result1);
+    }());
+
+    let sub = (function(){
+        let result2 = 3 * 5;
+        return result2;
+    })();
+
+    console.log(sub);
+
+</script>
+</body>
+</html>
